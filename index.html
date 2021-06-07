@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketvirtas dizainas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        html {
+            font-size: 18px;
+            height: 100%;
+        }
+
+        body {
+            max-width: 1920px;
+            min-height: 100%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #060606;
+            width: 100%;
+            position: relative;
+        }
+
+        h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #000000;
+            font-size: 4rem;
+            line-height: 5.7222rem;
+
+        }
+
+        header .first-row a {
+            color: #FFFFFF;
+            font-size: 0.7778rem;
+            line-height: 1.1111rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            position: absolute;
+            top: 2.1667rem;
+            right: 6.0556rem;
+            text-decoration: none;
+        }
+
+        header .second-row h1 {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #FFFFFF;
+            font-size: 5.6667rem;
+            padding-top: 10.2222rem;
+            padding-left: 5.8333rem;
+            padding-bottom: 8.8333rem;
+        }
+
+        .content-wrapper {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: auto 1fr auto;
+
+        }
+
+
+
+        /*main */
+
+        #content {
+            min-height: 903px;
+
+        }
+
+        .container-1 {
+            display: grid;
+            grid-template-rows: 1fr auto 1fr;
+            padding-left: 6.1111rem;
+            padding-top: 7.9444rem;
+
+        }
+
+        .container-1-contacts p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 4rem;
+            line-height: 103px;
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .container-1-contacts a {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 4rem;
+            line-height: 5.7222rem;
+            color: #F5A623;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .container-2 {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 20% 80%;
+            grid-template-areas: none;
+            grid-row-gap: 2.7778rem;
+            padding-top: 1.8889rem;
+        }
+
+        .container-2 p {
+            color: #060606;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+        }
+
+        .container-2 h5 {
+            font-size: 1.3889rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            color: #060606;
+            width: 31%;
+            display: inline;
+        }
+
+        .container-2 input {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            width: 63%;
+            background-color: #F8F8F8;
+            overflow: auto;
+            resize: none;
+            border: none
+        }
+
+        .container-2 textarea {
+            background-color: #F8F8F8;
+            width: 63%;
+            overflow: auto;
+            resize: none;
+            border: none;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+        }
+
+        .container-2 input,
+        .container-2 ::placeholder {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1.6667rem;
+        }
+
+        .container-2 ::placeholder {
+            color: #969696;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            line-height: 1.3889rem;
+            font-weight: 700;
+        }
+
+
+        .container-2 a {
+            background-color: #060606;
+            color: #F8F8F8;
+            text-decoration: none;
+            text-align: center;
+            width: 22%;
+            font-size: 1.3889rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 900;
+            padding-top: 1rem;
+            padding-bottom: 0.8889rem;
+            padding-right: 4.8889rem;
+            padding-left: 4.8889rem;
+            margin-top: 2.7778rem;
+        }
+
+        .container-2 a :hover {
+            cursor: pointer;
+        }
+
+
+        .container-3 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 1.6667rem;
+            background-color: #69779B;
+            color: #FFFFFF;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: normal;
+            padding-bottom: 0;
+        }
+
+
+        h3 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 2.8333rem;
+            line-height: 4rem;
+            font-weight: 700;
+
+        }
+
+        .items {
+            padding-top: 5.8889rem;
+            padding-left: 6.0556rem;
+            justify-content: left;
+            padding-bottom: 4.7222rem;
+
+        }
+
+        .items p {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-top: 1.3333rem;
+            font-size: 1rem;
+        }
+
+
+        /*footer */
+
+
+        footer {
+            color: #fff;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        span {
+            color: #F5A623;
+        }
+
+        .footer-items {
+            font-family: SourceSansPro-Black;
+            padding-left: 5.9444rem;
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: left;
+
+            width: 100%;
+
+        }
+
+
+        .footer-items p,
+        .footer-items a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: SourceSansPro-Black;
+            font-size: 2rem;
+            line-height: 2.7222rem;
+            font-weight: 900;
+        }
+
+        .footer-items .item-1 {
+
+            width: 25%;
+
+        }
+
+
+        .footer-items .item-2 {
+
+
+            width: 35%;
+        }
+
+
+
+        .footer-items .item-3 {
+
+            width: 20%;
+        }
+
+
+        .footer-items input {
+            color: #FFFFFF;
+            display: block;
+            border: none;
+            background-color: #000000;
+            width: 50%;
+            border-bottom: 0.0556rem solid #808080;
+            padding-bottom: 0.3333rem;
+        }
+
+        .footer-items input:focus {
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            border-bottom: 0.0556rem solid #808080;
+        }
+
+        .footer-items ::-webkit-input-placeholder {
+            color: #A9A9A9;
+        }
+
+
+        .email {
+            padding-top: 1.0556rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3.3889rem;
+        }
+
+        label>i {
+            font-size: 0.8333rem;
+        }
+
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 2.3889rem;
+            list-style: none;
+            padding-bottom: 3.8889rem;
+            padding-right: 6.1111rem;
+        }
+
+
+        .icons i {
+            color: #FFFFFF;
+            width: 1.1111rem;
+            cursor: pointer;
+        }
+
+        #item-3-contact {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.8889rem;
+            line-height: 1.8889rem;
+        }
+
+
+        @media all and (max-width: 1508px) {
+
+            .container-2 {
+                column-gap: 2rem;
+            }
+
+            .container-3 {
+                column-gap: 0.3rem;
+            }
+        }
+
+        @media all and (max-width: 1310px) {
+            .container-2 {
+                column-gap: 0.3rem;
+            }
+
+            .container-2 .items {
+                padding-left: 1rem;
+            }
+
+            .container-3 .items {
+                width: 100%;
+                padding-top: 0.5556rem;
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .container-3 .items p {
+                font-size: 1rem;
+            }
+        }
+
+
+        @media all and (max-width: 980px) {
+
+            html {
+                font-size: 12px;
+            }
+
+
+            #header .left-column h1 {
+                font-size: 4rem;
+                padding-left: 3rem;
+            }
+
+            .container-1-contacts h2 {
+                display: inline-block;
+            }
+
+            .container-1-contacts p {
+                width: 100%;
+                text-align: center;
+            }
+
+            .container-2 {
+                width: 100%;
+                grid-template: auto / 100%;
+                place-items: left;
+                row-gap: 0.8333rem;
+            }
+
+
+
+            .container-2>input,
+            .container-2>textarea {
+                width: 80%;
+            }
+
+
+            .container-2 h5,
+            .container-2 ::placeholder,
+            .container-2 a {
+                font-size: 1.5rem;
+            }
+
+            .container-2 a {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+
+            .footer-items {
+                padding: 1rem;
+                padding-left: 5rem;
+            }
+
+            .footer-items {
+                width: 100%;
+                display: block;
+                align-items: center;
+            }
+
+            footer {
+                position: relative;
+            }
+
+
+            .footer-items .item-1 {
+                padding-top: 2.6111rem;
+                width: 100%;
+            }
+
+            .footer-items .item-2 {
+                padding-top: 2.6111rem;
+                width: 100%;
+            }
+
+
+
+            .footer-items .item-3 {
+                padding-top: 2.6111rem;
+                width: 100%;
+            }
+
+
+
+
+        }
+
+
+        @media all and (max-width: 466px) {
+
+            #main-contact .container-1-contacts {
+                width: 100%;
+                display: grid;
+                place-items: center;
+            }
+
+            #header .left-column h1 {
+                font-size: 4rem;
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+
+            <div class="first-row">
+                <a href='#'>MENU</a>
+
+            </div>
+            <div class="second-row">
+                <h1>Contact us</h1>
+            </div>
+
+        </header>
+        <main>
+            <div class="container-1">
+
+                <div class="container-1-contacts">
+                    <h2>You can </h2>
+                    <h2><span> write us </span>here</h2>
+                </div>
+
+                <div class="container-2">
+
+                    <label for="name">
+                        <h5>Name</h5>
+                    </label><input type="text" placeholder="Name_" name="name">
+
+                    <label for="name">
+                        <h5>Phone no.</h5>
+                    </label><input type="number" placeholder="Phone_" name="name">
+
+                    <label for="name">
+                        <h5>Email</h5>
+                    </label><input type="email" placeholder="Email_" name="name">
+
+                    <label for="name">
+                        <h5>Message</h5>
+                    </label><textarea name="message" rows="10" placeholder="Type your message here…"></textarea>
+                    <label for="button"></label> <a href="#">Send</a>
+
+                </div>
+
+            </div>
+            <div class="container-3 clearfix">
+                <div class="items">
+                    <h3>London</h3>
+                    <p>695 Richmond Road, Chester, CH87 8YE</p>
+                </div>
+                <div class="items">
+                    <h3>Santa Monica</h3>
+                    <p>1 Lawrence St. Santa Monica, CA 90403</p>
+                </div>
+                <div class="items">
+                    <h3>Portland</h3>
+                    <p>670 Henry Smith St., Portland, ME 04103</p>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer-items clearfix">
+                <div class="item-1">
+                    <h3>Create new</h3>
+                    <h3>digital future</h3>
+                </div>
+                <div class="item-2">
+                    <p>Subscribe our <span>newsletter</span></p>
+                    <div class="email">
+                        <input placeholder="E-mail" type="email" name="E-mail"><label for="email">Subscribe <i
+                                class="fas fa-long-arrow-alt-right"></i></label>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <p>Contact us</p>
+                    <p id="item-3-contact">(052) 611-5711 name.surname@companyname.com</p>
+                </div>
+            </div>
+            <ul class="icons">
+                <li><i class="fab fa-facebook-f "></i></li>
+                <li><i class="fab fa-linkedin-in "></i></li>
+                <li><i class="fab fa-instagram "></i></li>
+                <li><i class="fab fa-twitter "></i></li>
+            </ul>
+
+
+        </footer>
+    </div>
+</body>
+
+</html>
